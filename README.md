@@ -25,7 +25,9 @@
   randomSecond();
   // => 19
   ```
-  
+
+By default, returns a second from `0` to `59`. Idea is for generating a clock time.
+
 ## Related
   
 - [random-year](https://github.com/mock-end/random-year) - Generate a random year.
