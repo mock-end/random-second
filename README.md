@@ -17,16 +17,35 @@
 ## Usage
   
   ```js
-  var randomSecond = require('random-second');
+var randomSecond = require('random-second');
   
-  // API
-  // - randomSecond();
+// API
+// - randomSecond([options]);
   
-  randomSecond();
-  // => 19
-  ```
+// options
+// - min
+// - max
+```
 
-By default, returns a second from `0` to `59`. Idea is for generating a clock time.
+By default, returns a minute from `0` to `59`. Idea is for generating a clock time.
+  
+```js
+  randomSecond();
+  // => 37
+```
+
+Optionally specify min, max, or both to limit the range.
+
+```js
+randomSecond({ min: 10 });
+// => 18
+
+randomSecond({ max: 40 });
+// => 23
+
+randomSecond({ min: 10, max: 40 });
+// => 32
+```
 
 ## Related
   
@@ -44,6 +63,6 @@ By default, returns a second from `0` to `59`. Idea is for generating a clock ti
   
 ## Contributing
   
-  Pull requests and stars are highly welcome.
+Pull requests and stars are highly welcome.
   
-  For bugs and feature requests, please [create an issue](https://github.com/mock-end/random-second/issues/new).
+For bugs and feature requests, please [create an issue](https://github.com/mock-end/random-second/issues/new).
