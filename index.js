@@ -9,7 +9,7 @@ module.exports = function (options) {
 
   if (options) {
     options.min = options.min ? randomNatural.fixme(options.min, MIN, MAX, true) : MIN;
-    options.max = options.max ? randomNatural.fixme(options.max, MIN, MAX, true) : MAX;
+    options.max = options.max ? randomNatural.fixme(options.max, MIN, MAX, false) : MAX;
 
     options = {
       min: options.min,
